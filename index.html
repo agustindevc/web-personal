@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agustín Díaz · Desarrollador web junior</title>
+  <meta name="description" content="Portfolio de Agustín Díaz, desarrollador web junior: React, TypeScript, Python, SQL y Odoo. Busco trabajo 100% remoto.">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="top">
+    <nav class="wrap nav" aria-label="Principal">
+      <a class="brand" href="#inicio">AD</a>
+      <ul class="links">
+        <li><a href="#sobre-mi" data-i18n="nav_about">Sobre mí</a></li>
+        <li><a href="#habilidades" data-i18n="nav_skills">Habilidades</a></li>
+        <li><a href="#proyectos" data-i18n="nav_projects">Proyectos</a></li>
+        <li><a href="#trayectoria" data-i18n="nav_path">Trayectoria</a></li>
+        <li><a href="#contacto" data-i18n="nav_contact">Contacto</a></li>
+      </ul>
+      <button id="lang" class="lang" type="button" aria-label="Cambiar idioma / Change language">EN</button>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero wrap">
+      <p class="eyebrow" data-i18n="hero_eyebrow">Hola, soy</p>
+      <h1>Agustín Díaz</h1>
+      <p class="role" data-i18n="hero_role">Desarrollador web junior</p>
+      <p class="lead" data-i18n="hero_lead">Construyo aplicaciones con React, TypeScript, Python y SQL. Busco un puesto 100% remoto donde seguir aprendiendo y aportar desde el primer día.</p>
+      <div class="actions">
+        <a class="btn primary" href="#proyectos" data-i18n="cta_projects">Ver proyectos</a>
+        <a class="btn" id="cv" href="assets/cv/Agustin_Diaz_CV_ES.pdf" download data-i18n="cta_cv">Descargar CV</a>
+        <a class="btn ghost" href="https://github.com/agustindevc" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/agustindiaz-dev" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="wrap">
+      <h2 data-i18n="about_h">Sobre mí</h2>
+      <p data-i18n="about_p1">Soy desarrollador web junior, egresado de la FP de Grado Superior en Desarrollo de Aplicaciones Web (MEDAC Nova, Málaga, 2025). Trabajo con Python, JavaScript/TypeScript, React, SQL (Supabase/PostgreSQL) y Odoo, y uso herramientas de IA como apoyo para programar, depurar y aprender más rápido.</p>
+      <p data-i18n="about_p2">Antes de entrar en tecnología fundé y dirigí una marca de indumentaria durante tres años y capacité a unas 300 personas en Argentina y México. Eso me dejó autonomía, orden y mucha práctica tratando con clientes.</p>
+    </section>
+
+    <section id="habilidades" class="wrap">
+      <h2 data-i18n="skills_h">Habilidades</h2>
+      <div class="grid skills">
+        <article class="card">
+          <h3>Frontend</h3>
+          <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Chakra UI</li><li>Bootstrap</li></ul>
+        </article>
+        <article class="card">
+          <h3>Backend</h3>
+          <ul class="tags"><li>Python</li><li>Odoo</li><li>Django <span class="lvl" data-i18n="basic">(básico)</span></li><li>PHP <span class="lvl" data-i18n="intro">(introductorio)</span></li><li>Java <span class="lvl" data-i18n="intro">(introductorio)</span></li></ul>
+        </article>
+        <article class="card">
+          <h3 data-i18n="skills_data">Datos</h3>
+          <ul class="tags"><li>SQL</li><li>PostgreSQL</li><li>Supabase</li></ul>
+        </article>
+        <article class="card">
+          <h3 data-i18n="skills_tools">Herramientas</h3>
+          <ul class="tags"><li>Git &amp; GitHub</li><li>VS Code</li><li>GitHub Actions</li><li>Docker <span class="lvl" data-i18n="basic">(básico)</span></li><li>Linux <span class="lvl" data-i18n="basic">(básico)</span></li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="proyectos" class="wrap">
+      <h2 data-i18n="projects_h">Proyectos</h2>
+      <div class="grid projects">
+        <article class="card">
+          <h3>Pokémon App</h3>
+          <p class="meta">React · Chakra UI · React Query · Vite</p>
+          <p data-i18n="p1_desc">App que consume la PokéAPI: tarjetas con paginación, popup de detalles y buscador. Datos en caché con React Query y despliegue automático con GitHub Actions.</p>
+          <p class="links-row">
+            <a href="https://agustindevc.github.io/pokeapi/" rel="noopener" data-i18n="demo">Demo</a>
+            <a href="https://github.com/agustindevc/pokeapi" rel="noopener" data-i18n="code">Código</a>
+          </p>
+        </article>
+        <article class="card soon">
+          <h3 data-i18n="p2_title">Gestor de tareas</h3>
+          <p class="meta">React · TypeScript · Supabase</p>
+          <p data-i18n="p2_desc">App full stack con registro, inicio de sesión y gestión de tareas. En construcción.</p>
+          <p class="badge" data-i18n="soon">Próximamente</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="p3_title">App de leads con IA (cliente)</h3>
+          <p class="meta">Odoo · Python</p>
+          <p data-i18n="p3_desc">Proyecto freelance en desarrollo: analiza conversaciones de ventas con IA y sugiere el siguiente paso para cerrar la venta. Código privado.</p>
+          <p class="badge" data-i18n="private">Privado · en desarrollo</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="p4_title">SaaS de sincronización de stock</h3>
+          <p class="meta">Supabase · PostgreSQL</p>
+          <p data-i18n="p4_desc">Mantiene el stock de una tienda física y de su tienda online sincronizado y avisa para preparar los pedidos web. Código privado.</p>
+          <p class="badge" data-i18n="private">Privado · en desarrollo</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="trayectoria" class="wrap">
+      <h2 data-i18n="path_h">Trayectoria</h2>
+      <ol class="timeline">
+        <li><span class="when">2026</span><div><strong data-i18n="t1">Desarrollador freelance (proyecto Odoo)</strong><span data-i18n="t1d">App de gestión de leads con IA para un cliente.</span></div></li>
+        <li><span class="when">2025</span><div><strong data-i18n="t2">FP en Desarrollo de Aplicaciones Web</strong><span>MEDAC Nova, Málaga</span></div></li>
+        <li><span class="when">2023</span><div><strong data-i18n="t3">Capacitador · Amazing Floor</strong><span data-i18n="t3d">Unos 15 cursos para unas 300 personas en Argentina y México.</span></div></li>
+        <li><span class="when">2020–2023</span><div><strong data-i18n="t4">Fundador · CLASE A</strong><span data-i18n="t4d">Marca de indumentaria con unos 15 puntos de venta en 3 ciudades.</span></div></li>
+      </ol>
+    </section>
+
+    <section id="contacto" class="wrap">
+      <h2 data-i18n="contact_h">Contacto</h2>
+      <p data-i18n="contact_p">Estoy abierto a puestos remotos de desarrollo web, soporte técnico o QA junior, y a encargos freelance.</p>
+      <p class="links-row">
+        <a href="mailto:agustind1212@gmail.com">agustind1212@gmail.com</a>
+        <a href="https://www.linkedin.com/in/agustindiaz-dev" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/agustindevc" rel="noopener">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>© <span id="year"></span> Agustín Díaz · <span data-i18n="foot">Hecho con HTML, CSS y JavaScript, sin frameworks.</span></p>
+  </footer>
+</body>
+</html>
